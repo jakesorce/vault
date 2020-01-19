@@ -1,6 +1,6 @@
-#!/bin/bash 
+#!/bin/bash
 
-set -e 
+set -e
 
 echo "starting vault..."
 
@@ -8,5 +8,4 @@ echo "starting vault..."
 ./dev-config.sh > /tmp/dev.json
 # ./unsealer.sh &
 
-vault server -config=/tmp/dev.json
-
+vault server -dev -config=/tmp/dev.json
